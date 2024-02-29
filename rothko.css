@@ -1,0 +1,55 @@
+.canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+  overflow: hidden;
+  /*
+    overflow: hidden allows the excess content to hide in the padding 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/overflow */
+  filter: blur(1px); /* to make the picture less sharp/blurrier*/
+}
+
+.frame {
+  border: 50px solid black;
+  width: 500px;
+  padding: 50px;
+  margin: 20px auto;
+}
+
+.one {
+  width: 425px;
+  height: 150px;
+  background-color: #efb762;
+  margin: 20px auto; /* top and bottom | left and right */
+  box-shadow: 0 0 3px 3px #efb762;
+  /* one way to make sides/edges less sharp*/
+  border-radius: 6px;
+  /* to make the edges rounder*/
+  transform: rotate(-0.6deg);
+  /* to rotate the edge*/
+}
+
+.two {
+  width: 475px;
+  height: 200px;
+  background-color: #8f0401;
+  margin: 0 auto 20px; /* top | left and right | bottom */
+  box-shadow: 0 0 3px 3px #8f0401;
+  border-radius: 8px 10px; /* top-left-and-bottom-right | top-right-and-bottom-left */
+  transform: rotate(0.4deg);
+}
+
+.one, .two {
+  filter: blur(1px);
+}
+
+.three {
+  width: 91%;
+  height: 28%;
+  background-color: #b20403;
+  margin: auto;
+  filter: blur(2px);
+  box-shadow: 0 0 5px 5px #b20403;
+  border-radius: 30px 25px 60px 12px; /* top-left | top-right | bottom-right | bottom-left */
+ transform: rotate(-0.2deg)
+}
